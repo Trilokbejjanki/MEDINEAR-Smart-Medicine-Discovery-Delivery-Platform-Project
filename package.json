@@ -1,0 +1,15 @@
+{
+  "name": "medinear",
+  "private": true,
+  "version": "0.1.0",
+  "scripts": {
+    "dev": "concurrently --kill-others-on-fail --names API,WEB --prefix-colors blue,green \"python backend/manage.py runserver 127.0.0.1:8000\" \"npm --prefix frontend run dev -- --host 127.0.0.1\"",
+    "backend": "python backend/manage.py runserver 127.0.0.1:8000",
+    "frontend": "npm --prefix frontend run dev -- --host 127.0.0.1",
+    "build": "npm --prefix frontend run build",
+    "check": "python backend/manage.py check && npm --prefix frontend run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
