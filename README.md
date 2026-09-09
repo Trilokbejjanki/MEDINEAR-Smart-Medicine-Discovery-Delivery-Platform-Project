@@ -1,58 +1,65 @@
-# MediNear
+# 💊 MediNear — Smart Medicine Discovery & Delivery Platform
 
-MediNear is a healthcare discovery and delivery platform for finding verified local pharmacies, comparing medicines, ordering essentials and tracking delivery.
+ Find Nearby. Order Easily. Stay Healthy.
 
-## Current build
+MediNear is a full-stack healthcare platform that connects customers with nearby medical stores. Users can discover stores by State & Area, search medicines, upload prescriptions, place orders, choose delivery options, make payments, and track their orders in real time.
 
-- React + Vite responsive customer experience
-- Django REST Framework API
-- JWT authentication endpoint
-- Database-driven states, areas, categories, stores and medicines
-- Medicine search and filtering API
-- Customer order creation and order history API
-- MySQL-ready configuration with SQLite development fallback
-- Admin registration and demo data command
+## ✨ Key Features
 
-## Run the backend
+* 🔐 Secure User Authentication & Role-Based Access
+* 📍 State & Area Based Medical Store Discovery
+* 🏪 Medical Store & Medicine Search
+* 💊 Medicine Categories & Availability
+* 🛒 Smart Cart & Wishlist
+* 📄 Prescription Upload & Verification
+* 🚚 Standard, Express & Store Pickup
+* 💳 Online Payment & Cash on Delivery
+* 📦 Order Management & Tracking
+* ⭐ Reviews & Ratings
+* 📊 Customer, Store & Admin Dashboards
 
-```powershell
-cd backend
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-pip install -r requirements.txt
-Copy-Item .env.example .env
-python manage.py migrate
-python manage.py seed_demo
-python manage.py runserver
-```
+## 🛠️ Tech Stack
 
-Use `DATABASE_ENGINE=mysql` in `.env` with the MySQL credentials when MySQL is ready. Keep secrets out of source control.
+Frontend: React.js • JavaScript • HTML5 • CSS3 • Bootstrap
+Backend: Python • Django • Django REST Framework
+Database: MySQL
+Payment: Razorpay Test Mode
+Tools: Git • GitHub • VS Code
 
-## Run the frontend
+## 🔄 How It Works
 
-```powershell
-cd frontend
-npm install
-npm run dev
-```
+Login
+  ↓
+Select State & Area
+  ↓
+Find Medical Stores
+  ↓
+Search Medicine
+  ↓
+Add to Cart
+  ↓
+Upload Prescription (if required)
+  ↓
+Checkout & Payment
+  ↓
+Order Tracking
+  ↓
+Delivery
 
-The API health endpoint is available at `http://127.0.0.1:8000/api/health/`.
+## 📍 Current Locations
 
-## Run both services with one command
+🇮🇳 Andhra Pradesh
+🇮🇳 Telangana
 
-From the project root:
+The system is designed to easily support additional states and locations in the future.
 
-```powershell
-npm install
-npm run dev
-```
+## 🎯 Project Goal
 
-This starts Django at `http://127.0.0.1:8000/` and Vite at `http://127.0.0.1:5173/`. Press `Ctrl+C` once to stop both services.
+To provide a convenient digital platform for **discovering nearby medical stores, ordering medicines, managing prescriptions, and tracking deliveries** through one user-friendly application.
 
-## API surface
+## 👨‍💻 Developer
 
-`GET /api/states/`, `GET /api/states/{id}/areas/`, `GET /api/stores/?area=Eluru`, `GET /api/medicines/?q=paracetamol`, `GET /api/categories/`, `POST /api/register/`, JWT login at `POST /api/login/`, and authenticated order endpoints under `/api/orders/`.
+Bejjanki Trilok
+Python Full Stack Developer
 
-## Roadmap
-
-Prescription file approval, cart persistence, payment gateway adapters, store-owner workflows, reviews, notifications, admin reports and GPS-based delivery tracking are the next modules.
+⭐ If you find this project useful, consider giving it a star!
