@@ -1,8 +1,8 @@
 # 💊 MediNear — Smart Medicine Discovery & Delivery Platform
 
- Find Nearby. Order Easily. Stay Healthy.
+ **Find Nearby. Order Easily. Stay Healthy.**
 
-MediNear is a full-stack healthcare platform that connects customers with nearby medical stores. Users can discover stores by State & Area, search medicines, upload prescriptions, place orders, choose delivery options, make payments, and track their orders in real time.
+**MediNear** is a full-stack healthcare platform that connects customers with nearby medical stores. Users can discover stores by State & Area, search medicines, upload prescriptions, place orders, choose delivery options, make payments, and track their orders in real time.
 
 ## ✨ Key Features
 
@@ -20,11 +20,11 @@ MediNear is a full-stack healthcare platform that connects customers with nearby
 
 ## 🛠️ Tech Stack
 
-Frontend: React.js • JavaScript • HTML5 • CSS3 • Bootstrap
-Backend: Python • Django • Django REST Framework
-Database: MySQL
-Payment: Razorpay Test Mode
-Tools: Git • GitHub • VS Code
+**Frontend**: React.js • JavaScript • HTML5 • CSS3 • Bootstrap
+**Backend**: Python • Django • Django REST Framework
+**Database**: MySQL
+**Payment**: Razorpay Test Mode
+**Tools**: Git • GitHub • VS Code
 
 ## 🔄 How It Works
 
@@ -59,7 +59,7 @@ To provide a convenient digital platform for **discovering nearby medical stores
 
 ## 👨‍💻 Developer
 
-Bejjanki Trilok
-Python Full Stack Developer
+**Bejjanki Trilok**
+**Python Full Stack Developer**
 
-⭐ If you find this project useful, consider giving it a star!
+⭐ **If you find this project useful, consider giving it a star!**
